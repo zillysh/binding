@@ -1,0 +1,40 @@
+header {
+  background: radial-gradient(circle, rgba(255, 165, 0, 0.8) 5%, rgba(255, 255, 0, 0.6) 55%, rgba(192, 85, 85, 0) 30%);  
+  height: 400px; 
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  z-index: 1;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px; 
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+section div p {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 40%;
+}
+
