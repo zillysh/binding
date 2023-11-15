@@ -1,40 +1,81 @@
-header {
-  background: radial-gradient(circle, rgba(255, 165, 0, 0.8) 5%, rgba(255, 255, 0, 0.6) 55%, rgba(192, 85, 85, 0) 30%);  
-  height: 400px; 
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+/* FONT */
+:root {
+	--font-lora: 'Lora', serif;
+  --font-prata: 'Prata', serif;
+}
+
+:root {
+	--margin-top: 50px;
+  --margin-bottom: 50px;
+  --margin-left: 50px;
+  --margin-right: 50px;
+}
+
+body{
+  background-color: #F8F9EA;
+}
+
+.background-circle{
+	background: conic-gradient(
+    from 0deg at 50% 50%,   
+    #FF6347,                
+    #FF8B9A,               
+    #FFD700,               
+    #FF6347                 
+  );
+	height: 600px;
+  border-radius: 90%;
+  width: 600px;
+  margin: auto;
+  filter: blur(50px);
+  z-index: 1;
 }
 
 h1 {
-  font-size: 2.5em;
-  font-weight: bold;
-  letter-spacing: 2px;
-  z-index: 1;
+  background-color: #F8F9EA;
+  position: relative;
+  font-family: var(--font-lora);
+  font-size: 3em;
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-align: center;
+  line-height: 60px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  margin-top: calc(-1 * var(--margin-top));
+  margin-bottom: calc(2 * var(--margin-top));
+  z-index: 2;
+  color: #252525;
 }
 
 main div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px; 
+  margin-bottom: 100px;   
 }
 
-section {
+.author {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  text-align: left;
+  margin-left: var(--margin-left);
+  margin-right: var(--margin-right);
+  font-size: 1.4em;
+  margin-bottom: 150px;
+  justify-content: space-between;
 }
 
 section div p {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  font-family: var(--font-lora);
+  font-size: 1.4em;
+  margin-bottom: 30px;
   text-align: left;
-  margin-left: 50px;
-  margin-right: 50px;
   width: 40%;
+  line-height: 30px;
+  font-weight: 400;
 }
 
