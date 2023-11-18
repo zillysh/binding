@@ -1,10 +1,100 @@
-a {
-    text-decoration: none; 
-    color: #000000;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600&display=swap');
+
+/* VARIABLES */
+
+/* FONT */
+:root {
+	--font-garamond: 'Cormorant Garamond', serif;
+  --font-dm-sans: 'DM Sans', sans-serif;
+}
+
+/* FONT DETAILS */
+:root {
+  --black: #000;
+  --headerfont-size: 3em;
+  --smalltitle-font-size: 2.8em;
+}
+
+/* MARGINS */
+:root {
+  --margin-top: 50px;
+  --margin-bottom: 50px;
+  --margin-left: 23px;
+  --margin-right: 23px;
   }
-  
-  a:hover {
-    text-decoration: underline; 
-    color: #000000; 
-  }
-  
+
+
+/* HEADER ELEMENTS */
+header{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: var(--margin-left);
+  padding-right: var(--margin-right);
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+
+header p:first-child {
+  font-family: var(--font-garamond);
+  font-weight: 500;
+  font-style: italic;
+  font-size: calc(0.6 * var(--headerfont-size));
+  margin-bottom: -5px;
+}
+
+header p:nth-child(2) {
+  font-family: var(--font-dm-sans);
+  font-weight: 400;
+  font-size: calc(0.4 * var(--headerfont-size));
+  margin-bottom: -5px;
+}
+
+
+/* SMALL TITLE */
+h1{
+  margin-top: calc(2 * var(--margin-top));
+  padding-right: 300px;
+  line-height: 38px;
+}
+
+h1 span {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+h1 span:nth-child(1){
+  font-family: var(--font-garamond);
+  font-weight: 400;
+  font-style: italic;
+  font-size: var(--smalltitle-font-size);
+  margin-right: 120px;
+}
+
+h1 span:nth-child(2){
+  font-family: var(--font-dm-sans);
+  font-weight: 400;
+  font-size: calc(0.8 * var(--smalltitle-font-size));
+  margin-right: 190px;
+}
+
+h1 span:nth-child(3) {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end
+}
+
+h1 span:nth-child(3) span:nth-child(1){
+  margin-right: 0px;
+}
+
+h1 span:nth-child(3) span:nth-child(2){
+  margin-right: 0px;
+  margin-left: 10px;
+}
