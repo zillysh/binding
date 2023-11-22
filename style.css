@@ -51,7 +51,7 @@ header p:first-child {
 header p:nth-child(2) {
   font-family: var(--font-dm-sans);
   font-weight: 400;
-  font-size: calc(0.3 * var(--headerfont-size));
+  font-size: calc(0.4 * var(--headerfont-size));
   margin-bottom: -5px;
 }
 
@@ -104,7 +104,7 @@ h1 span:nth-child(3) span:nth-child(2){
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -190px;
+  margin-top: -280px;
 }
 
 .background-circle{
@@ -120,6 +120,17 @@ h1 span:nth-child(3) span:nth-child(2){
   width: 70vmin;
   filter: blur(8vmin); 
   z-index: -100000;
+
+  animation: rotate 7s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* BIG TITLE */
@@ -150,7 +161,7 @@ h1 span:nth-child(3) span:nth-child(2){
 
 .big-title p:nth-child(2) {
   font-family: var(--font-garamond);
-  font-weight: 500;
+  font-weight: 400;
   font-style: italic;
   letter-spacing: -20px; 
   font-size: calc(5 * var(--headerfont-size)); 
