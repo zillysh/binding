@@ -1,11 +1,7 @@
 
 /* PAGE TITLE */
 
-h1 div {
-  display: flex;
-  }
-  
 h1 div span:last-child {
-  padding-left: 5px;
+  padding-left: 15px;
 }
 
