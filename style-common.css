@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600&display=swap');
+
+/* VARIABLES */
+
+/* FONT */
+:root {
+	--font-garamond: 'Cormorant Garamond', serif;
+  --font-dm-sans: 'DM Sans', sans-serif;
+}
+
+/* FONT DETAILS */
+:root {
+  --black: #000;
+  --headerfont-size: 3em;
+	--pagetitle-font-size: 7em;
+}
+
+/* MARGINS */
+:root {
+  --margin-top: 50px;
+  --margin-bottom: 50px;
+  --margin-left: 23px;
+  --margin-right: 23px;
+	--margin-left-article: 120px;
+	--margin-top-article: 90px;
+  }
+
+
+/* HEADER ELEMENTS */
+header{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: var(--margin-left);
+  padding-right: var(--margin-right);
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+	background-color: black;
+}
+
+header p:first-child {
+  font-family: var(--font-garamond);
+  font-weight: 500;
+  font-style: italic;
+  font-size: calc(0.6 * var(--headerfont-size));
+  margin-bottom: -5px;
+	color: white;
+}
+
+header p:nth-child(2) {
+  font-family: var(--font-dm-sans);
+  font-weight: 400;
+  font-size: calc(0.3 * var(--headerfont-size));
+  margin-bottom: -5px;
+	color: white;
+}
+
+
+/* BREADCRUMB */
+
+.breadcrumbs-container{
+	display: flex;
+	flex-direction: row;
+	font-family: var(--font-dm-sans);
+	font-weight: 400;
+	font-size: 19px;
+	margin-left: var(--margin-left-article);
+	margin-top: var(--margin-top-article);
+}
+
+.breadcrumbs-container p:nth-child(1) a {
+	color: rgba(0, 0, 0, 0.361);
+}
+
+.breadcrumbs-container p:nth-child(1) a:hover {
+	color: black;
+}
+
+.breadcrumbs-container span,
+.breadcrumbs-container p:nth-child(2) {
+    padding-left: 10px; 
+}
+
+/* PAGE TITLE */
+h1 {
+	font-family: var(--font-garamond);
+  font-weight: 500;
+  font-style: italic;
+  font-size: var(--pagetitle-font-size);
+  margin-top: calc(2.5 * var(--margin-top));
+	margin-left: var(--margin-left-article);
+  padding-right: 18%;
+	line-height: 90px;
+}
+
+h1 div {
+  display: flex;
+}
+
+h1 div span:last-child {
+	padding-left: 5px;
+}
+
+

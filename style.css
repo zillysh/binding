@@ -51,10 +51,9 @@ header p:first-child {
 header p:nth-child(2) {
   font-family: var(--font-dm-sans);
   font-weight: 400;
-  font-size: calc(0.4 * var(--headerfont-size));
+  font-size: calc(0.3 * var(--headerfont-size));
   margin-bottom: -5px;
 }
-
 
 /* SMALL TITLE */
 h1{
@@ -240,10 +239,10 @@ h1 span:nth-child(3) span:nth-child(2){
   align-items: center; 
   justify-content: center;
   margin-top: calc(0.5 * var(--margin-top));
+  margin-bottom: calc(5.5 * var(--margin-top));
 }
 
 .article-box {
-  border: 1px solid #000;
   display: flex; 
   flex-direction: column; 
   align-items: center; 
@@ -253,10 +252,11 @@ h1 span:nth-child(3) span:nth-child(2){
   width: 400px;
   height: 500px;
   overflow: hidden;
+  border: 1px solid #000;
   border-left: none;
 }
 
-.article-box:first-child {
+a:nth-child(1) .article-box {
   border-left: 1px solid #000;
 }
 
@@ -272,7 +272,7 @@ h1 span:nth-child(3) span:nth-child(2){
 
 .article-box:hover {
   background-color: #000000; 
-  z-index: -1000;
+  z-index: -1000000;
 }
 .article-box:hover p {
   color: white;
@@ -287,7 +287,6 @@ h1 span:nth-child(3) span:nth-child(2){
   height: 30vmin; 
   width: 30vmin;
   border-radius: 50%; 
-  z-index: -100000;
   background-size:50.1% 50.1%;
   background-repeat:no-repeat;
 }
@@ -297,7 +296,6 @@ h1 span:nth-child(3) span:nth-child(2){
   linear-gradient(to bottom, #D94040, #f8b568);       
   height: 30vmin; 
   width: 30vmin;
-  z-index: -100000;
 }
 
 .article3-decor{
@@ -309,5 +307,4 @@ h1 span:nth-child(3) span:nth-child(2){
   height: 30vmin; 
   width: 30vmin;
   border-radius: 50%; 
-  z-index: -100000;
 }
