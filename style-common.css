@@ -15,6 +15,7 @@
   --headerfont-size: 3em;
 	--pagetitle-font-size: 7em;
 	--subheading-font-size: 1.5em;
+  --body-font-size: 1.45em;
 }
 
 /* MARGINS */
@@ -115,13 +116,28 @@ h1 div {
 	display: flex;
 	}
 
-.pagetitle-container p {
+.pagetitle-container p:nth-of-type(1) {
+  font-family: var(--font-dm-sans);
+  font-weight: 300;
+	font-size: calc(0.7 * var(--subheading-font-size));
+	padding-top: 15px;
+}
+
+.author {
+  text-decoration: underline;
+}
+
+.date {
+  color: rgba(0, 0, 0, 0.509);
+}
+
+.pagetitle-container p:nth-of-type(2) {
   font-family: var(--font-dm-sans);
   font-weight: 400;
 	font-size: var(--subheading-font-size);
 	width: 440px;
-	padding-top: 70px;
-	line-height: 32px;
+	padding-top: 55px;
+	line-height: 30px;
 }
 
 .article1-decor{
@@ -130,8 +146,8 @@ h1 div {
   linear-gradient(to bottom left, #B52F97 0%, #B9A950 25.23%, #12C06C 38%, #9533E2 50%) bottom left,
   linear-gradient(to top left,    #B52F97 0%, #B9A950 25.23%, #12C06C 38%, #9533E2 50%) top left,
   linear-gradient(to top right,   #B52F97 0%, #B9A950 25.23%, #12C06C 38%, #9533E2 50%) top right;        
-  height: 35vmin; 
-  width: 35vmin;
+  height: 360px; 
+  width: 360px;
   border-radius: 50%; 
   background-size:50.1% 50.1%;
   background-repeat:no-repeat;
@@ -140,8 +156,8 @@ h1 div {
 .article2-decor{
   background:
   linear-gradient(to bottom, #D94040, #f8b568);       
-  height: 35vmin; 
-  width: 35vmin;
+  height: 360px; 
+  width: 360px;
 }
 
 .article3-decor{
@@ -150,8 +166,8 @@ h1 div {
     #3877F1,                                
     #949fff34                 
   );     
-  height: 35vmin; 
-  width: 35vmin;
+  height: 360px; 
+  width: 360px;
   border-radius: 50%; 
 }
 
@@ -163,4 +179,24 @@ h1 div {
 }
 
 
+/* ARTICLE */
 
+article{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: var(--margin-right-article);
+}
+
+article p{
+  font-family: var(--font-dm-sans);
+  font-weight: 300;
+	font-size: var(--body-font-size);
+	width: 690px;
+	padding-top: 55px;
+	line-height: 31px;
+}
+
+article div{
+	padding-top: 150px;
+}
