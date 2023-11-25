@@ -27,6 +27,7 @@
 	--margin-left-article: 130px;
 	--margin-right-article: 130px;
 	--margin-top-article: 90px;
+  --body-width: 670px;
   }
 
 
@@ -192,11 +193,41 @@ article p{
   font-family: var(--font-dm-sans);
   font-weight: 300;
 	font-size: var(--body-font-size);
-	width: 680px;
-	padding-top: 55px;
+	width: var(--body-width);
+	margin-top: 40px;
 	line-height: 31px;
 }
 
+h2 {
+  font-family: var(--font-garamond);
+  font-weight: 600;
+  font-style: italic;
+	font-size: calc(2.5 * var(--body-font-size));
+}
+
+h3{
+  font-family: var(--font-dm-sans);
+  font-weight: 400;
+	font-size: calc(1.2 * var(--body-font-size));
+}
+
+article p:nth-of-type(1) {
+	margin-top: 10px;
+}
+
 article div{
-	padding-top: 150px;
+	margin-top: 140px;
+}
+
+blockquote{
+  font-family: var(--font-dm-sans);
+  font-weight: 600;
+	font-size: calc(1.8 * var(--body-font-size));
+  line-height: 40px;
+	width: var(--body-width);
+  padding-left: 80px;
+  padding-right: 80px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
