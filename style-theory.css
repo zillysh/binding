@@ -7,9 +7,17 @@ h1 div span:last-child {
 
 /* ARTICLE */
 
+.imagery-textcontainer p{
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: calc(0.8 * var(--body-font-size));
+  font-weight: 300;
+}
+
+/* PRIMARY COLOR VENN DIAGRAM */
 .imagery-primarycolors {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -35,4 +43,63 @@ h1 div span:last-child {
 .circle:nth-child(3) {
   background-color: #5a75f9;
   margin-left: -40px;
+}
+
+/* RED BOXES GRID */
+.imagery-redsquares {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 670px;
+  
+}
+
+.red-square{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.red-square:nth-child(1) {
+  background-color: #ea4747;
+}
+
+.red-square:nth-child(2) {
+  background-color: #ffbfbf;
+}
+
+.red-square:nth-child(3) {
+  background-color: #d64c4c;
+}
+
+.red-square:nth-child(4) {
+  background-color: #d21b1b;
+}
+
+.red-square:nth-child(5) {
+  background-color: #f74848;
+}
+
+.red-square:nth-child(6) {
+  background-color: #a23636;
+}
+
+.red-square:nth-child(7) {
+  background-color: #ff3636;
+}
+
+.red-square:nth-child(8) {
+  background-color: #c90101;
+}
+
+.red-square:nth-child(9) {
+  background-color: #f96868;
+}
+
+.red-square:nth-child(10) {
+  background-color: #d30000;
 }
