@@ -200,9 +200,10 @@ article p{
 
 h2 {
   font-family: var(--font-garamond);
-  font-weight: 600;
+  font-weight: 400;
   font-style: italic;
 	font-size: calc(2.5 * var(--body-font-size));
+  margin-left: -2px;
 }
 
 h3{
@@ -215,19 +216,21 @@ article p:nth-of-type(1) {
 	margin-top: 10px;
 }
 
-article div{
+article section{
 	margin-top: 140px;
 }
+
+/* QUOTE */
 
 blockquote{
   font-family: var(--font-dm-sans);
   font-weight: 600;
-	font-size: calc(1.8 * var(--body-font-size));
-  line-height: 40px;
+	font-size: calc(1.6 * var(--body-font-size));
+  line-height: 35px;
 	width: var(--body-width);
   padding-left: 80px;
   padding-right: 80px;
   text-align: center;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }

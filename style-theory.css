@@ -7,3 +7,32 @@ h1 div span:last-child {
 
 /* ARTICLE */
 
+.imagery-primarycolors {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  mix-blend-mode: multiply;
+}
+
+.circle:nth-child(1) {
+  background-color: #ea4747;
+}
+
+.circle:nth-child(2) {
+  background-color: #fced5e;
+  margin-left: -40px;
+}
+
+.circle:nth-child(3) {
+  background-color: #5a75f9;
+  margin-left: -40px;
+}
