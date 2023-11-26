@@ -103,3 +103,70 @@ h1 div span:last-child {
 .red-square:nth-child(10) {
   background-color: #d30000;
 }
+
+/* RAINBOW WHEEL FOR COLORBLIND */
+
+
+.imagery-text1container p{
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: calc(0.8 * var(--body-font-size));
+  font-weight: 300;
+}
+
+.imagery-text1container p::before {
+  content: "/ normal vision ";
+}
+
+.imagery-text1container:hover p::before {
+  content: "/ color blind vision ";
+}
+
+.imagery-colorblind {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.rainbow-circle{
+  background: repeating-conic-gradient(
+    #C6284E 0deg 30deg,
+    #E34A2C 30deg 60deg,
+    #E8692C 60deg 90deg,
+    #F1A031 90deg 120deg,
+    #F6BD47 120deg 150deg,
+    #F5EC00 150deg 180deg,
+    #D3D52A 180deg 210deg,
+    #77A948 210deg 240deg,
+    #4392D0 240deg 270deg,
+    #556EB6 270deg 300deg,
+    #594B9F 300deg 330deg,
+    #8854A3 330deg 360deg
+  );
+  height: 330px; 
+  width: 330px;
+  border-radius: 50%; 
+  transition: background 0.5s ease, opacity 0.5s ease; 
+  opacity: 1;
+}
+
+.imagery-text1container:hover .imagery-colorblind .rainbow-circle {
+  background: repeating-conic-gradient(
+    #44444D 0deg 30deg,
+    #6C6527 30deg 60deg,
+    #82782D 60deg 90deg,
+    #B5A524 90deg 120deg,
+    #CCC000 120deg 150deg,
+    #F9ED0B 150deg 180deg,
+    #F5E200 180deg 210deg,
+    #B4A922 210deg 240deg,
+    #7C8AC7 240deg 270deg,
+    #4860AE 270deg 300deg,
+    #2E3B97 300deg 330deg,
+    #31489E 330deg 360deg
+  );
+  opacity: 0.9; 
+}
