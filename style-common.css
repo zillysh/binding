@@ -13,8 +13,8 @@
 :root {
   --black: #000;
   --headerfont-size: 2.5em;
-	--pagetitle-font-size: 4em;
-	--subheading-font-size: 1.4em;
+	--pagetitle-font-size: 4.1em;
+	--subheading-font-size: 1.45em;
   --body-font-size: 1.3em;
 }
 
@@ -191,7 +191,7 @@ article p{
   font-weight: 300;
 	font-size: var(--body-font-size);
 	margin-top: 40px;
-	line-height: 1.1;
+	line-height: 1.15;
 }
 
 h2 {
