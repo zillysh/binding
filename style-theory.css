@@ -5,3 +5,43 @@ h1 div span:last-child {
   padding-left: 15px;
 }
 
+
+/* ARTICLE */
+
+.imagery-textcontainer p{
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: calc(0.8 * var(--body-font-size));
+  font-weight: 300;
+}
+
+/* PRIMARY COLOR VENN DIAGRAM */
+.imagery-primarycolors {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 135px;
+  height: 135px;
+  mix-blend-mode: multiply;
+}
+
+.circle:nth-child(1) {
+  background-color: #ea4747;
+}
+
+.circle:nth-child(2) {
+  background-color: #fced5e;
+  margin-left: -40px;
+}
+
+.circle:nth-child(3) {
+  background-color: #5a75f9;
+  margin-left: -40px;
+}

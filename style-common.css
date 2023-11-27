@@ -135,7 +135,7 @@ h1 div {
   font-weight: 400;
 	font-size: var(--subheading-font-size);
 	padding-top: 55px;
-	line-height: 1.05;
+	line-height: 1.1;
 }
 .article1-decor, .article2-decor, .article3-decor{
   height: 250px; 
