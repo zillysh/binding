@@ -13,7 +13,7 @@
 :root {
   --black: #000;
   --headerfont-size: 2.5em;
-	--pagetitle-font-size: 4.1em;
+	--h1-font-size: 4.2em;
 	--subheading-font-size: 1.45em;
   --body-font-size: 1.3em;
 }
@@ -70,9 +70,9 @@ header p:nth-child(2) {
 	flex-direction: column;
 	font-family: var(--font-dm-sans);
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 15px;
 	margin-left: var(--margin-left-article);
-	margin-top: calc(0.6 * var(--margin-top-article));
+	margin-top: calc(0.5 * var(--margin-top-article));
 }
 
 .breadcrumbs-container p:nth-child(1) a {
@@ -107,7 +107,7 @@ h1 {
 	font-family: var(--font-garamond);
   font-weight: 500;
   font-style: italic;
-  font-size: var(--pagetitle-font-size);
+  font-size: var(--h1-font-size);
 	line-height: 0.8;
 }
 
