@@ -221,7 +221,7 @@ article section{
 
 blockquote{
   font-family: var(--font-dm-sans);
-  font-weight: 500;
+  font-weight: 400;
 	font-size: calc(1.6 * var(--body-font-size));
   line-height: 0.95;
   text-align: center;
