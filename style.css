@@ -28,7 +28,6 @@ h1{
   display: flex;
   flex-direction: column;
   margin-top: 15%;
-  line-height: 38px;
   align-items: center;
 }
 
@@ -73,8 +72,8 @@ h1{
     #F36A3F,                             
     #F2F06D                 
   );
-  width: clamp(300px,70vw,550px);
-  height: clamp(300px,70vw,550px); 
+  width: clamp(375px,70vw,550px);
+  height: clamp(375px,70vw,550px); 
   border-radius: 50%; 
   filter: blur(9vmin); 
   z-index: -100000;
