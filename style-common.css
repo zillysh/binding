@@ -27,6 +27,7 @@
 	--margin-left-article: 23px;
 	--margin-right-article: 23px;
 	--margin-top-article: 90px;
+  --quote-padding: 20px;
   }
 
 
@@ -225,6 +226,8 @@ blockquote{
 	font-size: calc(1.6 * var(--body-font-size));
   line-height: 0.95;
   text-align: center;
+  padding-left: var(--quote-padding);
+  padding-right: var(--quote-padding);
   margin-top: 50px;
   margin-bottom: 50px;
 }
