@@ -229,3 +229,6 @@ blockquote{
   margin-bottom: 50px;
 }
 
+blockquote br {
+  display: none;
+}
