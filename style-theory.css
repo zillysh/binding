@@ -119,7 +119,7 @@ h1 div span:last-child {
   content: "/ normal vision ";
 }
 
-.imagery-text1container:active p::before {
+.imagery-text1container:hover p::before {
   content: "/ color blind vision ";
 }
 
@@ -154,7 +154,7 @@ h1 div span:last-child {
   opacity: 1;
 }
 
-.imagery-text1container:active .imagery-colorblind .rainbow-circle {
+.imagery-text1container:hover .imagery-colorblind .rainbow-circle {
   background: repeating-conic-gradient(
     #44444D 0deg 30deg,
     #6C6527 30deg 60deg,
