@@ -15,7 +15,7 @@
   --headerfont-size: 2.5em;
 	--h1-font-size: 4.3em;
 	--subheading-font-size: 1.45em;
-  --body-font-size: 1.2em;
+  --body-font-size: 1.1em;
 }
 
 /* MARGINS */
@@ -191,7 +191,7 @@ article p{
   font-weight: 300;
 	font-size: var(--body-font-size);
 	margin-top: 40px;
-	line-height: 1.15;
+	line-height: 1.2;
 }
 
 h2 {
