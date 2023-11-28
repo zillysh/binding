@@ -171,3 +171,14 @@ h1 div span:last-child {
   );
   opacity: 0.9; 
 }
+
+
+/* 995PX */
+@media screen and (min-width: 850px) {
+
+  .circle {
+    width: 150px;
+    height: 150px;
+  }
+  
+  }
