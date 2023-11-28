@@ -12,7 +12,6 @@
 /* FONT DETAILS */
 :root {
   --black: #000;
-  --headerfont-size: 2.5em;
 	--h1-font-size: 4.3em;
 	--subheading-font-size: 1.2em;
   --body-font-size: 1.2em;
@@ -23,8 +22,6 @@
 :root {
   --margin-top: 40px;
   --margin-bottom: 30px;
-  --margin-left: 23px;
-  --margin-right: 23px;
 	--margin-left-article: 23px;
 	--margin-right-article: 23px;
   --quote-padding: 18px;
@@ -33,36 +30,12 @@
 
 /* HEADER ELEMENTS */
 header{
-  display: flex;
-  justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: var(--margin-left);
-  padding-right: var(--margin-right);
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 10000;
 	background-color: black;
 }
 
-header p:first-child {
-  font-family: var(--font-garamond);
-  font-weight: 500;
-  font-style: italic;
-  font-size: calc(0.6 * var(--headerfont-size));
-  margin-bottom: -5px;
+header p{
 	color: white;
 }
-
-header p:nth-child(2) {
-  font-family: var(--font-dm-sans);
-  font-weight: 400;
-  font-size: calc(0.4 * var(--headerfont-size));
-  margin-bottom: -5px;
-	color: white;
-}
-
 
 /* BREADCRUMB */
 
@@ -249,7 +222,6 @@ blockquote br {
 	--margin-left-article: 30px;
 	--margin-right-article: 30px;
   --body-font-size: 1.28em;
-  --headerfont-size: 2.5em;
 	--h1-font-size: 4.4em;
 	--subheading-font-size: 1.3em;
 }
@@ -311,7 +283,6 @@ article{
 
 :root {
   --margin-top: 90px;
-  --headerfont-size: 3em;
 	--h1-font-size: 5.5em;
   --subheading-font-size: 1.35em;
   --body-font-size: 1.41em;
