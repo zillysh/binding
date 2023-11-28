@@ -14,7 +14,7 @@
   --black: #000;
   --headerfont-size: 2.5em;
 	--h1-font-size: 4.3em;
-	--subheading-font-size: 1.45em;
+	--subheading-font-size: 1.2em;
   --body-font-size: 1.2em;
   --breadcrumb-size: 15px;
 }
@@ -119,7 +119,7 @@ h1 div {
 .pagetitle-container p:nth-of-type(1) {
   font-family: var(--font-dm-sans);
   font-weight: 300;
-	font-size: calc(0.7 * var(--subheading-font-size));
+	font-size: calc(0.8 * var(--subheading-font-size));
 	padding-top: 15px;
 }
 
@@ -137,8 +137,9 @@ h1 div {
 	font-size: var(--subheading-font-size);
 	padding-top: 55px;
 	line-height: 1.1;
-  max-width: 330px;
+  max-width: 290px;
 }
+
 .article1-decor, .article2-decor, .article3-decor{
   height: 250px; 
   width: 250px;
@@ -249,14 +250,18 @@ blockquote br {
 	--margin-right-article: 30px;
   --body-font-size: 1.28em;
   --headerfont-size: 2.5em;
-	--h1-font-size: 4.3em;
-	--subheading-font-size: 1.5em;
+	--h1-font-size: 4.4em;
+	--subheading-font-size: 1.3em;
+}
+
+.pagetitle-container p:nth-of-type(2) {
+  max-width: 360px;
 }
 
 article{
   margin-left: auto;
   margin-right: auto;
-  max-width: 440px;
+  max-width: 460px;
 }
 
 blockquote{
@@ -266,11 +271,12 @@ blockquote{
 }
 
 
-/* 662PX */
-@media screen and (min-width: 662px) {
+/* 701PX */
+@media screen and (min-width: 701px) {
 
 :root{
   --margin-top: 60px;
+  --h1-font-size: 4.7em;
 }
 
 .breadcrumbs-container{
@@ -279,6 +285,10 @@ blockquote{
 
 .breadcrumbs-container p:nth-child(2) {
   padding-left: 10px; 
+}
+
+article{
+  max-width: 510px;
 }
 
 .article1-decor, .article2-decor, .article3-decor{
@@ -290,19 +300,21 @@ blockquote{
 .pagetitle-section{
 	flex-direction: row;
 	align-items: center;
-  margin-top: calc(1.2* var(--margin-top));
+  margin-top: calc(1.15 * var(--margin-top));
 }
 
 }
 
 
-/* 800PX */
+/* 850PX */
 @media screen and (min-width: 850px) {
 
 :root {
+  --margin-top: 90px;
   --headerfont-size: 3em;
 	--h1-font-size: 5.5em;
-  --body-font-size: 1.4em;
+  --subheading-font-size: 1.35em;
+  --body-font-size: 1.41em;
   --breadcrumb-size: 17px;
 	--margin-left-article: 60px;
 	--margin-right-article: 60px;
@@ -311,15 +323,31 @@ blockquote{
 .article1-decor, .article2-decor, .article3-decor{
   height: 300px; 
   width: 300px;
-  margin-bottom: 0;
 }
 
 article{
-  max-width: 500px;
+  max-width: 560px;
+}
+
+article p:nth-of-type(1) {
+	margin-top: 15px;
+}
+
+article section{
+	margin-top: 140px;
 }
 
 blockquote{
-  max-width: 405px;
+  max-width: 455px;
+}
+
+blockquote br {
+  display: block;
+}
+
+.pagetitle-section{
+	flex-direction: row;
+	align-items: center;
 }
 
 }
@@ -327,19 +355,54 @@ blockquote{
 /* 1060PX */
 @media screen and (min-width: 1060px) {
 
+  :root {
+    --h1-font-size: 6em;
+    --subheading-font-size: 1.42em;
+    --body-font-size: 1.45em;
+    --breadcrumb-size: 18px;
+    }
     
 article{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin-right: var(--margin-right-article);
+  max-width: 640px;
+}
+
+.article1-decor, .article2-decor, .article3-decor{
+  height: 330px; 
+  width: 330px;
+}
+
 }
 
 
+/* 1060PX */
+@media screen and (min-width: 1198px) {
+
+:root {
+  --h1-font-size: 7em;
+  --subheading-font-size: 1.5em;
+  --body-font-size: 1.45em;
+  --margin-left-article: 110px;
+  --margin-right-article: 110px;
 }
-
-
-
+    
 .pagetitle-container p:nth-of-type(2) {
-  max-width: 330px;
+  max-width: 420px;
 }
+
+article{
+  max-width: 670px;
+}
+
+.article1-decor, .article2-decor, .article3-decor{
+  height: 350px; 
+  width: 350px;
+}
+
+}
+
+/* ADD NEXT, PREVIOUS BUTTONS, FOOTER, COLOPHON, 
+OTHER STYLING WITHIN TEXT */

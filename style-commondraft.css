@@ -9,6 +9,35 @@
   --font-dm-sans: 'DM Sans', sans-serif;
 }
 
+:root {
+    --black: #000;
+    --headerfont-size: 3em;
+      --pagetitle-font-size: 7em;
+      --subheading-font-size: 1.5em;
+    --body-font-size: 1.45em;
+  }
+  
+  /* MARGINS */
+  :root {
+    --margin-top: 50px;
+    --margin-bottom: 50px;
+    --margin-left: 23px;
+    --margin-right: 23px;
+      --margin-left-article: 130px;
+      --margin-right-article: 130px;
+      --margin-top-article: 90px;
+    --body-width: 670px;
+    }
+
+
+
+
+
+
+
+
+
+
 /* FONT DETAILS */
 :root {
   --headerfont-size: 3em;
