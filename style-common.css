@@ -77,6 +77,7 @@ header p{
 	flex-direction: column;
 }
 
+
 h1 {
 	font-family: var(--font-garamond);
   font-weight: 500;
@@ -94,6 +95,10 @@ h1 div {
   font-weight: 300;
 	font-size: calc(0.8 * var(--subheading-font-size));
 	padding-top: 15px;
+}
+
+.pagetitle-container a:hover {
+  font-weight: 400;
 }
 
 .author {
@@ -374,6 +379,3 @@ article{
 }
 
 }
-
-/* ADD NEXT, PREVIOUS BUTTONS, FOOTER, COLOPHON, 
-OTHER STYLING WITHIN TEXT */

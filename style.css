@@ -212,7 +212,7 @@ h1{
   flex-direction: column; 
   justify-content: center;
   margin-top: calc(0.5 * var(--margin-top));
-  margin-bottom: calc(5.5 * var(--margin-top));
+  margin-bottom: calc(3 * var(--margin-top));
   margin-left: var(--margin-left);
   margin-right: var(--margin-right);
 }
