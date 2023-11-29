@@ -188,6 +188,7 @@ h3{
   font-weight: 400;
   font-style: italic;
 	font-size: calc(1.8 * var(--body-font-size));
+  margin-top: -30px;
 }
 
 article p:nth-of-type(1) {
@@ -197,6 +198,10 @@ article p:nth-of-type(1) {
 article section{
 	margin-top: 100px;
 }
+
+.negative-margin{
+  margin-top: -50px;
+ }
 
 /* QUOTE */
 
@@ -247,6 +252,10 @@ blockquote{
 
 }
 
+/* OTHER STYLING */
+em {
+  font-style: italic;
+}
 
 /* 701PX */
 @media screen and (min-width: 701px) {
@@ -349,6 +358,10 @@ article{
 .article1-decor, .article2-decor, .article3-decor{
   height: 330px; 
   width: 330px;
+}
+
+blockquote{
+  max-width: 487px;
 }
 
 }

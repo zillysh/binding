@@ -101,10 +101,9 @@ h1 div span:last-child {
 }
 
 .red-square:nth-child(10) {
+  background-color: #cb3333;
   display: none;
-  background-color: #d30000;
-}
-
+  }
 
 
 /* RAINBOW WHEEL FOR COLORBLIND */ 
@@ -172,13 +171,53 @@ h1 div span:last-child {
   opacity: 0.9; 
 }
 
+@media screen and (min-width: 406px) {
 
-/* 995PX */
-@media screen and (min-width: 850px) {
+  .imagery-redsquares {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .red-square:nth-child(9) {
+    display: none;
+    }
+}
+
+/* 701PX */
+@media screen and (min-width: 701px) {
 
   .circle {
     width: 150px;
     height: 150px;
   }
+
+}
+
+
+/* 995PX */
+@media screen and (min-width: 850px) {
+
+  .circle {
+    width: 180px;
+    height: 180px;
+  }
   
+  .rainbow-circle{
+    width: 310px;
+    height: 310px;
+  }
+  
+  .red-square{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+  }
+
+  }
+
+  @media screen and (min-width: 1060px) {
+    .red-square:nth-child(10), .red-square:nth-child(9) {
+      display: block;
+      }
+
   }
