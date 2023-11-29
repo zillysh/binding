@@ -127,6 +127,10 @@ h1{
 
 /* PAGE INTRO */
 
+.intro-box{
+  display: flex;
+}
+
 .intro-container {
   display: flex;
   flex-direction: column;
@@ -172,6 +176,7 @@ h1{
   font-size: var(--body-font-size);
   line-height: 1.15;
   margin-top: 20px;
+  max-width: 365px;
 }
 
 
@@ -280,6 +285,15 @@ a:nth-child(1) .article-box {
 
 
 
+@media screen and (min-width: 410px) {
+
+  .intro-box{
+    justify-content: center;
+  }
+
+}
+
+
 @media screen and (min-width: 500px) {
 
   :root {
@@ -323,6 +337,8 @@ a:nth-child(1) .article-box {
     --bigtitle-margin-top: -60%;
     --circle-margin-top: -85%;
     --subtext-font-size: 1.3em;
+    --heading-font-size: 1.9em;
+    --body-font-size: 1.3em;
   }
 
   h1 {
@@ -383,6 +399,8 @@ a:nth-child(1) .article-box {
   :root {
     --bigtitle-margin-top: -65%;
     --circle-margin-top: -85%;
+    --heading-font-size: 2.2em;
+    --body-font-size: 1.5em;
   }
 
   h1 {
@@ -395,6 +413,29 @@ a:nth-child(1) .article-box {
     margin-bottom: -65px;
   }
 
+  .intro-container{
+    flex-direction: row;
+  }
+
+  .intro-heading{
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .intro-text {
+    margin-top: 0;
+    margin-left: 30px;
+    width: 376px;
+  }
+
+  .intro-line {
+    border-right: 1px solid black;
+    border-bottom: 0;
+    width: 0;
+    height: 215px; 
+    margin-left: 30px;
+  }
+  
   .article1-decor, .article2-decor, .article3-decor{
     height: 190px; 
     width: 190px;
